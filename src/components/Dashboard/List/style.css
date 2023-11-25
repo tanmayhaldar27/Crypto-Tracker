@@ -1,0 +1,221 @@
+.mainList{
+    position: relative;
+}
+.listContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 5rem;
+    /* width: 100%; */
+    background-color: var(--gray);
+    padding: 1.5rem 3rem;
+    margin-top:1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+.listLogo{
+    width:25rem;
+}
+.listPercent{
+    width: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 0 !important;
+}
+.listPrice{
+    margin-top: 0 !important;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    width: 12rem;
+}
+.listMarket{
+    margin-top: 0 !important;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 3rem;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    width: 30rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    opacity: 1;
+    /* border: 1px solid red; */
+
+    & p{
+      /* border: 1px solid green; */
+      width: 15rem;
+      color: var(--white);
+    }
+}
+.marketList{
+    margin-top: 0 !important;
+}
+.redList:hover::before{
+    content:'';
+    position: absolute;
+    left: -1px;
+    top: -1.4px;
+    border-radius: 17px;
+    width: 100.3%;
+    height: 8.35rem;
+    z-index:-1;
+    background: linear-gradient(
+    var(--rotate),
+     #f1281d, #ea5555 43%, #7a0808
+  );
+  animation: spin 2.5s linear infinite;
+}
+
+
+.redList:hover::after {
+    position: absolute;
+    content: "";
+    top:15px;
+    left: -50px;
+    z-index: -1;
+    height: 3rem;
+    width: 105%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(30rem / 6));
+    background-image: linear-gradient(
+      var(--rotate),
+      #f1281d, #ea5555 43%, #7a0808
+    );
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+  }
+
+  
+.greenList:hover::before{
+    content:'';
+    position: absolute;
+    left: -1px;
+    top: -1.4px;
+    border-radius: 17px;
+    width: 100.3%;
+    height: 8.35rem;
+    z-index:-1;
+    background: linear-gradient(
+    var(--rotate),
+    #1bec0c, #9fd379 43%, #07651a
+  );
+  animation: spin 2.5s linear infinite;
+}
+
+
+.greenList:hover::after {
+    position: absolute;
+    content: "";
+    top:15px;
+    left: -50px;
+    z-index: -1;
+    height: 3rem;
+    width: 105%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(30rem / 6));
+    background-image: linear-gradient(
+      var(--rotate),
+      #1bec0c, #9fd379 43%, #07651a
+    );
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+ .mobile_view{
+  display: none;
+ }
+
+@media screen and  (max-width: 800px){
+  .desktop-view{
+    display: none;
+  }
+  .symbolUpDown{
+    display: none;
+  }
+  .mobile_view{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .listLogo{
+    width: 35rem;
+  }
+  .listPrice{
+    width: 22rem;
+    padding-right:1.2rem;
+  }
+  .listPercent{
+    width: 22rem;
+  }
+  .listMarket{
+    width: 20rem;
+  }
+  .mobile_view p{
+  width: fit-content;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width: 500px){
+  .listLogo{
+    width: 35rem;
+  }
+  .listPrice{
+    width: 22rem;
+    padding-right:1.2rem;
+  }
+  .listPercent{
+    width: 22rem;
+  }
+  .listMarket{
+    width: 20rem;
+  }
+  .mobile_view p{
+  width: fit-content;
+  }
+}
+
+
+@media screen and (min-width:500px) and (max-width: 600px){
+  /* .listLogo{
+    width: 35rem;
+  }
+  .listPrice{
+    width: 22rem;
+    padding-right:1.2rem;
+  }
+  .listPercent{
+    width: 22rem;
+  }
+  .listMarket{
+    width: 20rem;
+  } */
+  .mobile_view p{
+  width: fit-content;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px){
+  .mobile_view{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+

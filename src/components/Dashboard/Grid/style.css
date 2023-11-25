@@ -1,0 +1,207 @@
+.gridContainer{
+    width: 30rem;
+    height: 24rem;
+    background-color: var(--gray);
+    padding: 2.5rem 1rem 2.5rem 2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+.coinLogo{
+    display: flex;
+    padding-right:2rem;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.coinName p:nth-child(2){
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-top: .5rem;
+    opacity: .8;
+}
+.coinPercent{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+.red {
+     & p:nth-child(1){
+    border: 1px solid var(--red);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    color: var(--red); 
+    font-weight: 500;
+  }
+  & p:nth-child(1):hover{
+    background-color: var(--red);
+    color: white;
+  }
+  & p:nth-child(2){
+    border: 1px solid var(--red);
+    padding:.4rem .8rem;
+    padding-top: .7rem;
+    border-radius: 50%;
+    color: var(--red);
+ }
+ & p:nth-child(2):hover{
+    background-color: var(--red);
+    color: white;
+  }
+}
+.wishListDiv{
+  border: 2px solid red;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.green{
+  & p:nth-child(1){
+    border: 1px solid var(--green);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    color: var(--green);
+    text-align: center;
+    font-weight: 500;
+
+ }
+ & p:nth-child(1):hover{
+    background-color: var(--green);
+    color: white;
+  }
+ & p:nth-child(2){
+    border: 1px solid var(--green);
+    padding:.4rem .8rem;
+    padding-top: .7rem;
+    border-radius: 50%;
+    color: var(--green);
+ }
+ & p:nth-child(2):hover{
+    background-color: var(--green);
+    color: white;
+  }
+}
+.coinPrice{
+    margin-top: 2rem;
+    font-size:2rem;
+    font-weight: 500;
+}
+.coinMarket{
+    margin-top:2rem;
+    font-weight: 500;
+    /* opacity: .7; */
+
+    & p:nth-child(2){
+        margin-top: .7rem;
+    }
+      & p{
+        color:rgb(116, 116, 116);
+        /* border: 1px solid green; */
+      } 
+      & .marketPrice{
+        color: var(--white);
+      }
+      
+}
+.mainGrid{
+    position: relative;
+}
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+.redBox:hover::before{
+    content:'';
+    position: absolute;
+    left: -3px;
+    top: -1.5px;
+    border-radius: 17px;
+    width: 33.6rem;
+    height: 29.4rem;
+    z-index:-1;
+    background: linear-gradient(
+    var(--rotate),
+     #f1281d, #ea5555 43%, #7a0808
+  );
+  animation: spin 2.5s linear infinite;
+}
+
+.redBox:hover::after {
+    position: absolute;
+    content: "";
+    top:5px;
+    left: -2px;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(30rem / 6));
+    background-image: linear-gradient(
+      var(--rotate),
+      #f1281d, #ea5555 43%, #7a0808
+    );
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+  }
+
+  .greenBox:hover::before{
+    content:'';
+    position: absolute;
+    left: -3px;
+    top: -1.5px;
+    border-radius: 17px;
+    width: 33.6rem;
+    height: 29.4rem;
+    z-index:-1;
+    background: linear-gradient(
+    var(--rotate),
+     #1bec0c, #9fd379 43%, #07651a
+  );
+  animation: spin 2.5s linear infinite;
+}
+
+.greenBox:hover::after {
+    position: absolute;
+    content: "";
+    top:5px;
+    left: -2px;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(30rem / 6));
+    background-image: linear-gradient(
+      var(--rotate),
+      #1bec0c, #9fd379 43%, #07651a
+    );
+    opacity: 1;
+    transition: opacity 0.5s;
+    animation: spin 2.5s linear infinite;
+  }
+  .greenPrice{
+    color: var(--green);
+  }
+
+  .redPrice{
+    color: var(--red);
+  }
+@keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }

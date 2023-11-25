@@ -1,0 +1,15 @@
+.gridFlex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin:auto;
+    margin-top: 3rem;
+}
+.listFlex{
+   display: block;
+   width: 90%;
+   margin: auto;
+   margin-top: 3rem;
+}

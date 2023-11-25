@@ -1,0 +1,143 @@
+.mainComponent{
+    display: flex;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.left{
+    & h1{
+        font-size: 12rem;
+    }
+    .realTime{
+        color: var(--blue);
+    }
+    & p{
+        margin-top: 2rem;
+    }
+    .buttons{
+        display: flex;
+        gap: 2rem;
+        padding: 5rem 0;
+    }
+}
+.trackCrypto:hover{
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--white);
+    color:var(--black);
+    transition: all .3s;
+}
+.right{
+    position: relative;
+    padding-right: 10rem;
+
+    .iphoneImg{
+        width: 35rem;
+    }
+    .gradientImg{
+        z-index: -2;
+        position: absolute;
+        top: 50px;
+        left: 100px;
+        width: 27rem;
+        height: 55rem;
+        border-radius: 30px;
+        background:linear-gradient(var(--blue) , rgb(113, 194, 241));
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .mainComponent{
+        /* overflow: hidden; */
+        display: block;
+        margin-top: 5rem;
+        /* text-align: center; */
+    }
+    .left{
+       text-align: center;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .right{
+        margin-left: 16rem;
+        
+        .gradientImg{
+            position: absolute;
+            left: 40px;
+            top: 30px;
+        }
+    }
+}
+@media screen and (min-width:400px) and (max-width: 500px){
+    .mainComponent{
+        display: block;
+        margin-top: 5rem;
+        /* text-align: center; */
+    }
+    .left{
+       text-align: center;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+    .right{
+        margin-left: 25rem;
+
+        .gradientImg{
+            position: absolute;
+            left: 40px;
+            top: 30px;
+        }
+    } 
+}
+@media screen and (min-width:500px) and (max-width: 600px){
+    .mainComponent{
+        display: block;
+        margin-top: 5rem;
+        /* text-align: center; */
+    }
+    .left{
+       text-align: center;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+    .right{
+        margin-left: 30rem;
+
+        .gradientImg{
+            position: absolute;
+            left: 40px;
+            top: 30px;
+        }
+    } 
+}
+
+@media screen and (min-width:600px) and (max-width: 800px) {
+    .mainComponent{
+        display: block;
+        /* text-align: center; */
+    }
+    .left{
+       text-align: center;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .right{
+        margin-left: 30rem;
+    }
+}

@@ -1,0 +1,201 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2.5rem;
+
+    .headerLogo{
+        font-size: 3rem;
+        font-weight: 500;
+        color: var(--white);
+
+        & span{
+            color: var(--blue);
+        }
+    }
+}
+.headerLogo:hover{
+    color: var(--blue);
+}
+.headerLinks{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+    gap: 3rem;
+    font-size: 1.6rem;
+
+    & a{
+        opacity: .9;
+    }
+}
+.headerLinks a:hover:not(.dashboardbutton){
+    color: var(--blue);
+    border-bottom: 1px solid var(--blue);
+    line-height: 20px;
+    /* transition: all .3s ease-in-out; */
+}
+.mobileDrawer{
+    display: none;
+}
+.mobileLinks{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    padding: 5rem;
+    padding-right: 7rem;
+    padding-left: 3rem;
+    background-color: var(--black);
+    & a{
+        color: var(--white);
+    }
+}
+.menuIcon{
+    color: var(--white);
+    font-size: 3rem !important;
+    opacity: 1 !important;
+}
+
+/* Toggle */
+.toggleDiv{
+    background-color:transparent;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+
+    & .lightDiv{
+        /* background-color: red; */
+        width: 100%;
+        padding-top: .2rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+    .darkDiv{
+            padding-top: .2rem;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+    }
+}
+
+/* Media quires */
+
+@media screen and (max-width: 400px){
+    .toggleDiv{
+    position: absolute;
+    left: 15rem;
+  }
+  .headerLinks > *:not(.toggleDiv){
+    display: none;
+}
+.mobileDrawer{
+    display: block;
+}
+.menuIcon{
+    color: var(--white);
+    font-size: 2.5rem;
+}
+.mobileDrawer .mobileLinks{
+    background-color: var(--black);
+    color:var(--black);
+    font-size: 2rem;
+}
+} 
+  @media screen and (min-width:400px) and (max-width: 500px){
+    .toggleDiv{
+        position: absolute;
+        left: 20rem;
+      }
+      .headerLinks > *:not(.toggleDiv){
+        display: none;
+    }
+    .mobileDrawer{
+        display: block;
+    }
+    .menuIcon{
+        color: var(--white);
+        font-size: 2.5rem;
+    }
+    .mobileDrawer .mobileLinks{
+        background-color: var(--black);
+        color:var(--black);
+        font-size: 2rem;
+    }
+  }
+  
+  
+  @media screen and (min-width:500px) and (max-width: 600px){
+    .toggleDiv{
+        position: absolute;
+        left: 24rem;
+      }
+    .headerLinks > *:not(.toggleDiv){
+        display: none;
+    }
+    .mobileDrawer{
+        display: block;
+    }
+    .menuIcon{
+        color: var(--white);
+        font-size: 2.5rem;
+    }
+    .mobileDrawer .mobileLinks{
+        background-color: var(--black);
+        color:var(--black);
+        font-size: 2rem;
+    }
+  }
+  
+  @media screen and (min-width:600px) and (max-width: 700px){
+    .toggleDiv{
+        position: absolute;
+        left: 30rem;
+      }
+    .headerLinks > *:not(.toggleDiv){
+        display: none;
+    }
+    .mobileDrawer{
+        display: block;
+    }
+    .menuIcon{
+        color: var(--white);
+        font-size: 2.5rem;
+    }
+    .mobileDrawer .mobileLinks{
+        background-color: var(--black);
+        color:var(--black);
+        font-size: 2rem;
+    }
+  }
+  
+  @media screen and (min-width:700px) and (max-width: 800px){
+    .toggleDiv{
+        position: absolute;
+        left: 40rem;
+      }
+    .headerLinks > *:not(.toggleDiv){
+        display: none;
+    }
+    .mobileDrawer{
+        display: block;
+    }
+    .menuIcon{
+        color: var(--white);
+        font-size: 2.5rem;
+    }
+    .mobileDrawer .mobileLinks{
+        background-color: var(--black);
+        color:var(--black);
+        font-size: 2rem;
+    }
+  }

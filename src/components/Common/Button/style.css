@@ -1,0 +1,35 @@
+.button{
+    font-size: 1.6rem;
+    letter-spacing: 2px; 
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    color: var(--black);
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    min-width: 10.2rem;
+}
+.button:hover , .outLine-button:hover{
+    box-shadow: 0 0.5em 1rem -0.5em var(--green);
+    transform: translateY(-0.25em);
+}
+
+.outLine-button{
+    font-size: 1.5rem;
+    letter-spacing: 2px; 
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    color: var(--blue);
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--black);
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    outline: none;
+    min-width: 10.2rem;
+}

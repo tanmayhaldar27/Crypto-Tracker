@@ -1,0 +1,19 @@
+.backToTop{
+    background-color: var(--gray);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: fit-content;
+    color: var(--blue);
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+.backToTop:active{
+    background-color: var(--blue);
+    color: var(--gray);
+    transition: all .3s linear;
+}

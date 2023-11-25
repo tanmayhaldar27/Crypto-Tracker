@@ -1,0 +1,83 @@
+
+::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #000;
+}
+
+::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 20px;
+	background:var(--blue)
+}
+.wrapesDaysPrices{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.coinData{
+    padding: 2rem;
+	margin:0rem 3rem;
+  }
+  .compareList{
+	padding: 0;
+  }
+
+
+  .coinDaysFlex{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	/* margin: 1.5rem; */
+	padding: 2rem 2.5rem;
+  }
+  .lineChartCompare{
+	padding: 0 3rem;
+  }
+
+  .compare-flex{
+	padding: 1.2rem 3.5rem;
+	display: flex;
+	gap: 5rem;
+	align-items: center;
+	justify-content: flex-start;
+  }
+  .selectDays{
+	padding-bottom: 2rem ;
+  }
+
+  .coinDescCompare{
+	padding: 1rem 3rem;
+	font-size: 1.3rem !important;
+  }
+
+  .pageDaysPrices{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* border: 2px solid lime; */
+	gap: 2rem;
+  }
+
+  .watchlist-icon-red{
+    color: var(--red) !important;
+  }
+  
+  .watchlist-icon{
+    color: var(--green);
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    font-size: 2rem;
+  }

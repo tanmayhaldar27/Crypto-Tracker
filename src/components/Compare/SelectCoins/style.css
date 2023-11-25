@@ -1,0 +1,13 @@
+.coins-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    /* padding:1rem 3rem; */
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    background-color:var(--gray) !important;
+    color: var(--blue) !important;
+    font-weight: 500 !important;
+}

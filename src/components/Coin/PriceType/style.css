@@ -1,0 +1,11 @@
+.togglePrice{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+}
+@media only screen and (max-width:600px) {
+    .toggleBtn{
+        font-size: 1rem !important;
+    }
+}

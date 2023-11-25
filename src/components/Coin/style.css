@@ -1,0 +1,36 @@
+.CoinInfo{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.2rem 3rem;
+    margin-top:1.5rem;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.coinInfoDesc{
+    padding-top: 2rem;
+}
+.CoinInfo .coinInfoDesc a{
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.coinInfoDesc span{
+    color: var(--blue);
+    font-size: 1.3rem;
+    /* opacity: .7; */
+    padding-left: .5rem;
+}
+
+.selectDays{
+    display: flex;
+    /* padding: 1rem 0; */
+    margin-top: 2rem;
+    gap: 1rem;
+    align-items: center;
+
+    & p{
+        font-size: 1.5rem;
+    }
+}

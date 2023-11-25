@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.dark{
+  --black:#091020;
+  --gray:rgb(16, 24, 36);
+  --white:#fcfcfe;
+  --blue: #7efb6e;
+  --red : #ef233c;
+  --green:#48d009;
+  --lightgray : rgb(155, 207, 246);
+}
+.light{
+   --black:#efedf5;
+  --white:#564787;
+  --red : #ef233c;
+  --green:#1c5800;
+  --blue:#360568;
+  --gray:#d0c7e0;
+  --lightgray:#eef0f2; 
+}
+body {
+  transition: background-color .8s ease; /* Adjust the duration and timing function as needed */
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  letter-spacing:1px;
+}
+::selection{
+  background-color: var(--gray);
+  color: var(--blue);
+}
+body{
+  font-family: 'Fira Sans', sans-serif;
+  
+  font-size: 1.6rem;
+}
+a , li{
+  color: var(--white);
+  text-decoration: none;
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  }
+
+@media screen and (max-width: 400px){
+  html{
+    font-size: 35%;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width: 500px){
+  html{
+    font-size: 35%;
+  }
+}
+
+
+@media screen and (min-width:500px) and (max-width: 600px){
+  html{
+    font-size: 38%;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px){
+  html{
+    font-size: 40%;
+  }
+}
+
+@media screen and (min-width:800px) and (max-width: 1000px){
+  html{
+    font-size: 45%;
+  }
+}
+
+@media screen and (min-width:1000px) and (max-width: 1200px){
+  html{
+    font-size: 50%;
+  }
+}
+body{
+	background-color: var(--black);
+	color: var(--white);
+}
